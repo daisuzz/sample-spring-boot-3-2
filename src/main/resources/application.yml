@@ -1,0 +1,11 @@
+spring:
+  threads:
+    virtual:
+      enabled: true
+  docker:
+    compose:
+      file: "./docker-compose.yml"
+server:
+  tomcat:
+    threads:
+      max: 10

@@ -1,0 +1,5 @@
+# nodockerプロファイルの場合dockerコンテナを起動しない
+spring:
+  docker:
+    compose:
+      enabled: false
