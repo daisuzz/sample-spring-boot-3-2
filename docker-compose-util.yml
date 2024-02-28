@@ -1,5 +1,0 @@
-# Spring BootのDocker Composeサポートで読み込まないファイル
-version: "3.9"
-services:
-  sonarqube:
-    image: "sonarqube"

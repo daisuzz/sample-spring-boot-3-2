@@ -5,6 +5,8 @@ spring:
   docker:
     compose:
       file: "./docker-compose.yml"
+      profiles:
+        active: spring
 server:
   tomcat:
     threads:

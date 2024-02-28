@@ -7,11 +7,21 @@ services:
       - "5432"
     environment:
       POSTGRES_PASSWORD: test
+    profiles:
+      - "spring"
   redis:
     image: "redis"
     ports:
       - "6379"
+    profiles:
+      - "spring"
   elasticsearch:
     image: "elasticsearch:8.12.2"
     ports:
       - "9200"
+    profiles:
+      - "spring"
+  sonarqube:
+    image: "sonarqube"
+    profiles:
+      - "no-spring"
